@@ -46,3 +46,9 @@ function makeLinkedList(arr) {
 
     return list
 }
+
+
+module.exports = {
+    convertLinkedListToArray,
+    makeLinkedList
+}

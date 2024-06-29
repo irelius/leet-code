@@ -1,20 +1,22 @@
 // https://leetcode.com/problems/linked-list-cycle/description/
 
-// class to make a linked list
-class LinkedList {
-    constructor(head = null) {
-        this.head = head
+import { convertLinkedListToArray, makeLinkedList } from "../helper/linkedList";
+
+const hasCycle = function (head) {
+    if (head === null) {
+        return false
     }
-}
 
-// class to make a list node
-class ListNode {
-    constructor(data) {
-        this.data = data
-        this.next = null
+    let pointer1 = head
+    let pointer2 = head
+
+    while (pointer1.next !== null && pointer2.next.next !== null) {
+        if (pointer1.val === pointer2.val) {
+            return true
+        } else {
+            pointer1 = pointer1.next
+            pointer2 = pointer2.next.next
+        }
     }
-}
-
-var hasCycle = function (head) {
-
+    return false
 };
