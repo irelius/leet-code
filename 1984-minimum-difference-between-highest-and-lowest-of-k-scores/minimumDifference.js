@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/solutions/1431972/1984-minimum-difference-between-highest-and-lowest-of-k-scores/
 var minimumDifference = function (nums, k) {
     let sorted = nums.sort((a, b) => a - b)
 
