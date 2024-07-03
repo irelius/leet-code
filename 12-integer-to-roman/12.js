@@ -106,11 +106,7 @@ export const intToRoman = (num) => {
             output += rom[i]
             num -= val[i]
         }
-        console.log('booba', num)
     }
 
     return output
 }
-
-
-console.log(intToRoman(3749))
