@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { generateParentheses } from "../22-generate-parentheses/generateParentheses";
+import { generateParentheses } from "../22-generate-parentheses/22";
 
 describe("22 - Generate Parentheses", () => {
     test("Case 1", () => {
