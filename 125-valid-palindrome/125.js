@@ -7,15 +7,14 @@ export const isPalindrome = function (s) {
         let right = s[r].toLowerCase()
         if (!alphabet.includes(left)) {
             l++
-            continue
         } else if (!alphabet.includes(right)) {
             r--
-            continue
         } else if (left !== right) {
             return false
+        } else {
+            l++
+            r--
         }
-        l++
-        r--
     }
     return true
 };
