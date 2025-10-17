@@ -20,7 +20,7 @@ const splitName = name.split("-").filter((el) => el !== "");
 if (splitName.length < 2) {
 	// Throw error for incorrectly formatted test name
 	console.error(
-		"Error: Provide the number and name of the LeetCode question delimited with '-'. \n     e.g. `npm run create 1-two-sum`"
+		"Error: Provide both the number and name of the LeetCode question delimited with '-'. \n     e.g. `npm run create 1-two-sum`"
 	);
 	process.exit();
 }
@@ -37,11 +37,8 @@ if (isNaN(Number(questionNumber))) {
 	process.exit();
 }
 
-process.exit();
-
-// Get the name of the question and join back to convert
+// Slice off the number of the question and join back to get name, delimited by '-'
 const questionName = splitName.slice(1).join("-");
-
 // Use `splitName` and `changeCase` package to convert question name to be camelCase
 const functionName = changeCase.camelCase(questionName);
 // Use `splitName` and `changeCase` package to convert question name to be capitalized
