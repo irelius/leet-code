@@ -46,7 +46,6 @@ export const topKFrequent = function (nums, k) {
         for (let j = 0; j < curr.length; j++) {
             answer.push(parseInt(curr[j]))
             if (answer.length === k) {
-                console.log('booba', answer)
                 return answer
             }
         }
@@ -54,8 +53,3 @@ export const topKFrequent = function (nums, k) {
 
     return answer
 };
-
-// this is an export? what's export default?
-// export { topKFrequent }
-
-// export default topKFrequent
