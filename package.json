@@ -1,19 +1,20 @@
 {
-    "name": "leet-code",
-    "version": "1.0.0",
-    "description": "This is a directory to keep track of the leetcode questions I'm solving. This also utilizes mocha chai to have the testing environment on my local rather than on leetcode.",
-    "main": "index.js",
-    "directories": {
-        "test": "test"
-    },
-    "scripts": {
-        "test": "vitest"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "vitest": "^1.6.0"
-    },
-    "type": "module"
+	"name": "leet-code",
+	"version": "1.0.0",
+	"description": "This is a directory to keep track of the leetcode questions I'm solving. This also utilizes mocha chai to have the testing environment on my local rather than on leetcode.",
+	"main": "index.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"test": "vitest",
+		"create": "node helper/setup.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"vitest": "^1.6.1"
+	},
+	"type": "module"
 }

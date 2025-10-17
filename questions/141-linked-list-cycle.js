@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/linked-list-cycle/description/
 
-import { convertLinkedListToArray, makeLinkedList } from "../helper/linkedList";
+import { convertLinkedListToArray, makeLinkedList } from "../../helper/linkedList";
 
 const hasCycle = function (head) {
     let walk = head
