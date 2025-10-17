@@ -1,5 +1,5 @@
 import { describe, test, expect } from "vitest";
-import { twoSum } from "../1-two-sum/1";
+import { twoSum } from "../questions/1-two-sum";
 
 describe("1 - Two Sum", () => {
     test("Case 1", () => {

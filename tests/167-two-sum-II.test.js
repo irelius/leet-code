@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { twoSum } from "../167-two-sum-II/167";
+import { twoSum } from "../questions/167-two-sum-II/167";
 
 describe("167 - Two Sum II - Input Array is Sorted", () => {
     test("Case 1", () => {

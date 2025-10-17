@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { intersectionOfTwoArrays2 } from "../350-intersection-of-two-arrays-II/350";
+import { intersectionOfTwoArrays2 } from "../questions/350-intersection-of-two-arrays-II/350";
 
 describe("350 - Intersection of Two Arrays II", () => {
     test("Case 1", () => {

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { containsDuplicate } from "../217-contains-duplicate/217";
+import { containsDuplicate } from "../questions/217-contains-duplicate/217";
 
 describe("217 - Contains Duplicate", () => {
     test("Case 1", () => {

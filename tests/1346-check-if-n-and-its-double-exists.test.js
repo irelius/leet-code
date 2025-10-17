@@ -1,5 +1,5 @@
 import { describe, test, expect } from "vitest";
-import { checkIfNAndItsDoubleExists } from "../1346-check-if-n-and-its-double-exists/1346";
+import { checkIfNAndItsDoubleExists } from "../questions/1346-check-if-n-and-its-double-exists/1346";
 
 describe("1346 - Check If N and Its Double Exists", () => {
     test("Case 1", () => {

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { groupAnagrams } from "../49-group-anagrams/49";
+import { groupAnagrams } from "../questions/49-group-anagrams/49";
 
 describe("49 - Group Anagrams", () => {
     test("Case 1", () => {

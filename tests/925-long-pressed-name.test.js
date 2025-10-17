@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { longPressedName } from "../925-long-pressed-name/925";
+import { longPressedName } from "../questions/925-long-pressed-name/925";
 
 describe("925 - Long Pressed Name", () => {
     test('Case 1', () => {

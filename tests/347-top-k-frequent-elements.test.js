@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest'
-import { topKFrequent } from "../347-top-k-frequent-elements/347"
+import { topKFrequent } from "../questions/347-top-k-frequent-elements/347"
 
 describe("347 - Top K Frequent Elements", () => {
     test('[1,1,1,2,2,3], 2 equals [1, 2]', () => {
