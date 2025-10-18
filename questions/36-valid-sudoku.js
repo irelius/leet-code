@@ -53,7 +53,6 @@ export const validSudoku = (board) => {
 // 			const currNum = board[i][j];
 // 			if (currNum !== ".") {
 // 				if (check.has(currNum)) {
-// 					console.log("asdf");
 // 					return false;
 // 				} else {
 // 					check.add(currNum);
@@ -90,17 +89,14 @@ export const validSudoku = (board) => {
 // 	for (let i = x; i < x + 3; i++) {
 // 		for (let j = y; j < y + 3; j++) {
 // 			const currNum = board[i][j];
-// 			console.log(currNum);
 // 			if (currNum !== ".") {
 // 				if (boxCheck.has(currNum)) {
-// 					console.log("asdf");
 // 					return false;
 // 				} else {
 // 					boxCheck.add(currNum);
 // 				}
 // 			}
 // 		}
-// 		console.log("");
 // 	}
 
 // 	y += 3;
