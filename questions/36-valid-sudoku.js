@@ -44,6 +44,7 @@ export const validSudoku = (board) => {
 	return true;
 };
 
+// // Brute force solution
 // // Helper function to check each row
 // const checkRow = (board) => {
 // 	for (let i = 0; i < board.length; i++) {
@@ -108,7 +109,6 @@ export const validSudoku = (board) => {
 // 	return checkBox(x, y, board);
 // };
 
-// // Brute force solution
 // export const validSudoku = (board) => {
 // 	// Helper function to check each row
 // 	const rowCheck = checkRow(board);
