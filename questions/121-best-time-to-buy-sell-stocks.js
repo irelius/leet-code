@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 export const bestTimeToBuySellStocks = (prices) => {
 	let l = 0;
 	let r = 1;
