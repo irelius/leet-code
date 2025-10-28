@@ -2,13 +2,27 @@
 
 import { convertLinkedListToArray, makeLinkedList } from "../../helper/linkedList";
 
-const hasCycle = function (head) {
-    let walk = head
-    let fast = head;
-    while (fast && fast.next) {
-        walk = walk.next;
-        fast = fast.next.next;
-        if (walk === fast) return true;
-    }
-    return false;
+export default hasCycle = function (head) {
+	// set two pointers
+	//      `fast` will go through linked list by 2
+	//      `slow` will go through linked list by 1
+	let fast = head;
+	let slow = head;
+
+	// if there is a loop in the linked list, then `fast` will eventually overlap `slow` and land on the same node later down the road
+
+	// while `fast` and `fast.next` are valid values (truthy)
+	//      if `fast` or `fast.next` are `null`, then the linked list doesn't have a loop
+	while (fast && fast.next) {
+		// advance `fast` by 2
+		fast = fast.next.next;
+
+		// advance `slow` by 1
+		slow = slow.next;
+
+		// if `fast` and `slow` point to the same node, then there was a loop at some point
+		if (fast === slow) return true;
+	}
+
+	return false;
 };
