@@ -9,12 +9,12 @@ export const sameTree = (p, q) => {
 		// If `i` and `j` are both valid nodes AND they have the same value
 		if (i && j && i.val === j.val) {
 			// Invoke recursion of both left and right of the current `i` and `j` nodes
-			//      Return the `&&`, so if one of the paths returns a `false`, then one or both of the paths include non-matching values
+			// Return the `&&`, so if one of the paths returns `false`, then one or both paths are non-matching
 			//      Ex: [1, 2, 3] and [1, 2] would return true for the left node, but false for the right
 			return recurse(i.left, j.left) && recurse(i.right, j.right);
 		}
 
-		// Return false at then end
+		// Return `false` at the end
 		//      Because `i` or `j` are `null` values (but not both)
 		//      Or because the values of the nodes don't match
 		return false;
