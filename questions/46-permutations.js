@@ -1,4 +1,6 @@
 // https://leetcode.com/problems/permutations/description/
+// Does not provide unique permutations (includes duplicates)
+//      But question provides only unique numbers
 export const permutations = (nums) => {
 	let res = [];
 
@@ -26,5 +28,3 @@ export const permutations = (nums) => {
 
 	return res;
 };
-
-permutations([1, 2, 3]);
